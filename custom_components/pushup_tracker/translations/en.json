@@ -1,0 +1,30 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "This name is already in use."
+    },
+    "step": {
+      "user": {
+        "title": "Configure Pushup Tracker",
+        "description": "Set up the Pushup Tracker integration.",
+        "data": {
+          "name": "Name",
+          "input_entity": "Input Entity"
+        }
+      }
+    },
+    "error": {
+      "already_configured": "This name is already in use."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Edit Pushup Tracker",
+        "data": {
+          "input_entity": "Input Entity"
+        }
+      }
+    }
+  }
+}

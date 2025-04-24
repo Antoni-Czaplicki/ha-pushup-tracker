@@ -1,0 +1,30 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Ta nazwa jest już używana."
+    },
+    "step": {
+      "user": {
+        "title": "Konfiguruj Licznik Pompek",
+        "description": "Skonfiguruj integrację Licznika Pompek.",
+        "data": {
+          "name": "Nazwa",
+          "input_entity": "Urządzenie wejściowe"
+        }
+      }
+    },
+    "error": {
+      "already_configured": "Ta nazwa jest już używana."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Edytuj Licznik Pompek",
+        "data": {
+          "input_entity": "Urządzenie wejściowe"
+        }
+      }
+    }
+  }
+}
