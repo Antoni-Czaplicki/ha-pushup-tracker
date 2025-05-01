@@ -34,7 +34,7 @@ async def async_setup_entry(
             "key": "tolerance",
             "default": DEFAULT_TOLERANCE,
             "min_val": 0,
-            "max_val": 100,
+            "max_val": 30,
             "step": 1,
             "name_suffix": "Tolerance",
             "unique_id_suffix": "tolerance",
