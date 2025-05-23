@@ -24,6 +24,7 @@ from .const import (
     DEFAULT_TOLERANCE,
     DOMAIN,
     MANUFACTURER,
+    MAX_DISTANCE,
     MODEL,
     SW_VERSION,
 )
@@ -101,7 +102,7 @@ class PushupSensor(RestoreEntity, SensorEntity):
         self._process_boost_detection(current_distance)
 
     def _update_calibration(self, current_distance: float) -> None:
-        """Simpler calibration without velocity tracking."""
+        """Calibration of min max."""
         if current_distance is None:
             return
         self._min_distance = (
@@ -110,7 +111,7 @@ class PushupSensor(RestoreEntity, SensorEntity):
             else current_distance
         )
         self._max_distance = (
-            max(self._max_distance, current_distance)
+            max(self._max_distance, current_distance, MAX_DISTANCE)
             if self._max_distance
             else current_distance
         )
