@@ -111,7 +111,7 @@ class PushupSensor(RestoreEntity, SensorEntity):
             else current_distance
         )
         self._max_distance = (
-            max(self._max_distance, current_distance, MAX_DISTANCE)
+            min(max(self._max_distance, current_distance), MAX_DISTANCE)
             if self._max_distance
             else current_distance
         )
